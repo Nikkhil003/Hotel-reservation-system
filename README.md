@@ -4,7 +4,7 @@ A sophisticated web-based hotel reservation system that optimally assigns rooms 
 
 ## 🚀 Live Demo
 
-**Live URL**: [Your deployment URL will go here]
+**Live URL**:  https://nikkhil003.github.io/Hotel-reservation-system/
 
 ## 🏨 Features
 
