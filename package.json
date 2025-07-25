@@ -1,0 +1,38 @@
+{
+  "name": "hotel-reservation-system",
+  "version": "1.0.0",
+  "description": "A sophisticated hotel room reservation system with optimal room assignment algorithms",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "serve": "npx serve .",
+    "deploy": "echo 'Ready for deployment! Upload to your hosting provider.'",
+    "test": "echo 'Open index.html in browser to test'"
+  },
+  "keywords": [
+    "hotel",
+    "reservation",
+    "booking",
+    "algorithm",
+    "optimization",
+    "travel-time",
+    "web-app"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/hotel-reservation-system.git"
+  },
+  "homepage": "https://yourusername.github.io/hotel-reservation-system",
+  "devDependencies": {},
+  "dependencies": {},
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

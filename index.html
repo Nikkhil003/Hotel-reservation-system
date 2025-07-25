@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Room Reservation System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hotel Room Reservation System</h1>
+            <!-- <p>97 Rooms • 10 Floors • Smart Booking Algorithm</p> -->
+        </header>
+
+        <div class="controls">
+            <div class="booking-section">
+                <h2>Book Rooms</h2>
+                <div class="input-group">
+                    <label for="roomCount">Number of Rooms (1-5):</label>
+                    <input type="number" id="roomCount" min="1" max="5" value="1">
+                    <button id="bookRooms">Book Rooms</button>
+                </div>
+                <div id="bookingResult" class="result"></div>
+            </div>
+
+            <div class="action-buttons">
+                <button id="generateOccupancy">Generate Random Occupancy</button>
+                <button id="resetBooking">Reset All Bookings</button>
+                <button id="showStats">Show Statistics</button>
+            </div>
+        </div>
+
+        <div class="hotel-layout">
+            <h2>Hotel Floor Plan</h2>
+            <p style="margin-bottom: 15px; color: #6c757d; font-style: italic;">
+                Stairs and lift are located on the left side of the building. Rooms are arranged sequentially from left to right.
+            </p>
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="room-box available"></div>
+                    <span>Available</span>
+                </div>
+                <div class="legend-item">
+                    <div class="room-box occupied"></div>
+                    <span>Occupied</span>
+                </div>
+                <div class="legend-item">
+                    <div class="room-box selected"></div>
+                    <span>Just Booked</span>
+                </div>
+                <div class="legend-item">
+                    <div class="stairs-column-legend">STAIRS/LIFT</div>
+                    <span>Stairs/Lift(Left Side)</span>
+                </div>
+            </div>
+            <div class="hotel-building">
+                <div class="stairs-column">
+                    <div class="stairs-content">
+                        <div class="stairs-label">Stairs/Lift</div>
+                    </div>
+                </div>
+                <div id="hotelFloors" class="floors-container"></div>
+            </div>
+        </div>
+
+        <div class="statistics">
+            <h2>Booking Statistics</h2>
+            <div id="stats" class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-label">Total Rooms:</span>
+                    <span class="stat-value">97</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Available:</span>
+                    <span id="availableCount" class="stat-value">97</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Occupied:</span>
+                    <span id="occupiedCount" class="stat-value">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Occupancy Rate:</span>
+                    <span id="occupancyRate" class="stat-value">0%</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="travel-time-info">
+            <h2>Last Booking Details</h2>
+            <div id="lastBookingInfo" class="booking-info">
+                <p>No bookings made yet.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
