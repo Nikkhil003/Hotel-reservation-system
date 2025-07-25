@@ -44,8 +44,8 @@ hotel-reservation-system/
 ├── index.html          # Main HTML structure
 ├── styles.css          # Responsive CSS styling
 ├── script.js           # Core JavaScript logic
-├── README.md           # Documentation
-└── package.json        # Dependencies (if needed)
+├── package.json        # Project metadata and scripts
+└── README.md           # Documentation
 ```
 
 
