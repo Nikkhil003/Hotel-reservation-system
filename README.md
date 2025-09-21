@@ -1,6 +1,6 @@
 # Hotel Room Reservation System
 
-A sophisticated web-based hotel reservation system that optimally assigns rooms based on travel time minimization algorithms.
+A web-based hotel reservation system that assigns rooms to minimize walking distance between bookings.
 
 ## 🚀 Live Demo
 
